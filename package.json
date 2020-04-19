@@ -5,12 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"여기에 빌드 스크립트를 추가합니다.\""
+    "build": "webpack",
+    "start:dev": "webpack-dev-server --watch src"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^0"
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "style-loader": "^1.1.4",
+    "url-loader": "^4.1.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
